@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div h1{
+    width:500px;
+    text-align: center;
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+    align-items: flex-end;
+    
+    width: 100%;
+    
+    padding: 10px;
+    margin: 10px;
+   
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: brown;
+    text-decoration: none;
+
+}
+.banner{
+
+    width: 100%;
+    height: 600px;
+    background-image: url(https://images.news18.com/malayalam/uploads/2021/07/New-Project-4-12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 2px 3px 5px gray;
+
+}
+.overlay{
+    position: absolute;
+    top: 80%;
+    left: 30px;
+    font-size: xx-large;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+.hover-overlay{
+    background-color: black;
+    box-shadow:10px 3px 2px rgb(229, 218, 191);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.img1{
+    width:200px;
+    height:100px;
+}
+
+p{
+    margin: 0;
+}
+
+
+.container{
+    margin: 25px auto;
+
+}
+
+.image1{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image1 .overlay1 {
+    position: absolute;
+    bottom: 0;
+    padding-left: 25px;
+    padding-top: 15px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    z-index: 5;
+}
+
+.image1 .overlay1::before{
+    content: "";
+    background: #ffff;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    left:0;
+    bottom: -150px;
+    z-index: -2;
+    opacity: 0.5;
+    transition: all 0.3s ease-out;
+}
+.image1:hover .overlay1{
+    color: black;
+}
+.container .image:hover .overlay .amount,
+.container .image:hover .overlay .h4,
+.container .image:hover .overlay .textmuted,
+.container .image:hover .overlay .fa-star,
+.container .image:hover .overlay .fa-star-half-alt,
+.container .image:hover .overlay .review{
+    color: black;
+}
+
+.image1:hover .overlay1::before{
+    bottom: 0px;
+}
+
+.amount{
+    font-size: 15px;
+
+}
+.textmuted{
+    color: #f8f8f8;
+    font-weight: 200;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.fa-star,.fa-star-half-alt{
+    color: white;
+    font-size: 10px;
+    margin: 0 1px;
+}
+.review{
+    font-size: 12px;
+    font-weight: 200;
+}
